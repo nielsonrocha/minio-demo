@@ -12,12 +12,11 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/files")
-public class TestController {
-
+public class MinioController {
 
     final MinioAdapter minioAdapter;
 
-    public TestController(MinioAdapter minioAdapter) {
+    public MinioController(MinioAdapter minioAdapter) {
         this.minioAdapter = minioAdapter;
     }
 

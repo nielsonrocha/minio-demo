@@ -6,8 +6,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class DemoApplicationTests {
 
-	@Test
-	void contextLoads() {
+	final MinioAdapter minioAdapter;
+
+	public DemoApplicationTests(MinioAdapter minioAdapter) {
+		this.minioAdapter = minioAdapter;
 	}
+
+
 
 }
